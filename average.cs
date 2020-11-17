@@ -1,22 +1,27 @@
+// Program to calculate the average of the data inserted by the user
+// Patrick Galán Rodriguez
+
 using System;
 
 class Average
 {
     static void Main()
     {
-        double sumResult = 0, newMark, counter =  0, average;
-        string mark;
+        double sumResult = 0, number, counter =  0, average;
+        string input;
         
-        Console.WriteLine("Insert a mark or type \"end\" to see average");
-        mark = Console.ReadLine();	
+        Console.WriteLine("Insert a number or type \"end\" to see average");
+        input = Console.ReadLine();
+        Console.WriteLine();	
         	 
-        while(mark != "end")
+        while(input != "end")
         {  
-            newMark = Convert.ToDouble(mark);
+            number = Convert.ToDouble(input);
             counter++;   
-            sumResult += newMark;  
-            Console.WriteLine("Insert a mark or type \"end\" to see average");
-            mark = Console.ReadLine();
+            sumResult += number;  
+            Console.WriteLine("Insert a number or type \"end\" to see average");
+            input = Console.ReadLine();
+            Console.WriteLine();
         }
         
         if(counter != 0)

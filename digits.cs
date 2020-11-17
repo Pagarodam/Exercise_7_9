@@ -1,3 +1,8 @@
+/*Program that calculates how many numbers
+ *  of 1, 2, 3 or more digits are entered by the
+ *  user until he/she types “end”
+Patrick Galán Rodriguez */
+ 
 using System;
 
 class digits
@@ -8,7 +13,8 @@ class digits
         int units = 0,  tens= 0, hundreds = 0, more = 0;
         string input;
         
-        Console.WriteLine("Insert a number:");
+// do/while or repeat the next sentence for gain understandability ?       
+        Console.WriteLine("Insert numbers or type \"end\" to finish:");
         input = Console.ReadLine();
         
         while(input != "end")
@@ -29,6 +35,7 @@ class digits
             {
                 hundreds ++;  
             }
+            
             else
             {
                 more++; 
